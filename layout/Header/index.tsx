@@ -6,7 +6,7 @@ import tw from 'tailwind-react-native-classnames';
 const Header = () => {
   return (
     <SafeAreaView
-      style={{ position: 'absolute', top: 0, left: 0, right: 0, zIndex: 1 }}
+      style={{ position: 'relative', top: 0, left: 0, right: 0, zIndex: 1 }}
     >
       <View
         style={{
