@@ -1,24 +1,30 @@
 import { TabBarIcon } from '@/components/navigation/TabBarIcon';
 import React from 'react';
-import { Image, Text, View } from 'react-native';
+import { Image, SafeAreaView, Text, View } from 'react-native';
 import tw from 'tailwind-react-native-classnames';
 
 const Header = () => {
   return (
-    <div style={{ position: 'absolute', top: 0, left: 0, right: 0, zIndex: 1 }}>
+    <SafeAreaView
+      style={{ position: 'absolute', top: 0, left: 0, right: 0, zIndex: 1 }}
+    >
       <View
-        style={[
-          tw`flex justify-around items-center p-2`,
-          { backgroundColor: '#110101' },
-        ]}
+        style={{
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'center',
+          padding: 8,
+          backgroundColor: '#110101',
+          zIndex: 1,
+        }}
       >
         <Text style={tw` text-white text-xs`}>
           THAM GIA NGAY - BLACK FRIDAY SĂN SALE CỰC ĐÃ
         </Text>
       </View>
-      <div
+      <View
         style={{
-          display: 'flex',
+          flexDirection: 'row',
           justifyContent: 'space-around',
           alignItems: 'center',
           backgroundColor: '#fff',
@@ -30,12 +36,12 @@ const Header = () => {
         <View>
           <Image source={require('../../assets/images/logo.png')} />
         </View>
-        <div style={tw`flex items-center`}>
+        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
           <TabBarIcon name={'search'} style={tw`mr-2`} />
           <TabBarIcon name={'basket'} />
-        </div>
-      </div>
-    </div>
+        </View>
+      </View>
+    </SafeAreaView>
   );
 };
 
