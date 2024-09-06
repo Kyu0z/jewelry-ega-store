@@ -18,14 +18,14 @@ const Banner = () => {
     >
       <View style={styles.slide}>
         <Image
-          source={require('../../assets/images/slider2.jpg')}
+          source={require('../../../../assets/images/slider2.jpg')}
           style={styles.image}
           resizeMode='cover'
         />
       </View>
       <View style={styles.slide}>
         <Image
-          source={require('../../assets/images/slider1.jpg')}
+          source={require('../../../../assets/images/slider1.jpg')}
           style={styles.image}
           resizeMode='cover'
         />
@@ -36,7 +36,7 @@ const Banner = () => {
 
 const styles = StyleSheet.create({
   wrapper: {
-    height: height * 0.3, // Chiếm 30% chiều cao của thiết bị, bạn có thể điều chỉnh theo ý muốn
+    height: height * 0.3,
   },
   slide: {
     flex: 1,

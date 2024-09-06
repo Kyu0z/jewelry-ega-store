@@ -3,7 +3,7 @@ import { ScrollView, Text, View, StyleSheet, Dimensions } from 'react-native';
 import tw from 'tailwind-react-native-classnames';
 import Header from './Header';
 import Footer from './Footer';
-import Banner from '@/components/Banner';
+import Banner from '@/pages/HomePage/components/Banner';
 import HomePage from '@/pages/HomePage';
 
 const { height } = Dimensions.get('window');
@@ -34,6 +34,7 @@ const styles = StyleSheet.create({
   },
   contentInner: {
     padding: 16,
+    backgroundColor: '#fff',
   },
 });
 
