@@ -78,8 +78,8 @@ const TabsSale = () => {
             justifyContent: 'center',
             display: 'flex',
             alignSelf: 'center',
-            marginTop: 12,
-            marginBottom: 16,
+            marginTop: 0,
+            marginBottom: 40,
             borderWidth: 1,
             borderColor: '#e8e8e2',
           }}

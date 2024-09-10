@@ -9,6 +9,8 @@ import { SceneMap, TabBar, TabView } from 'react-native-tab-view';
 import About from './components/About';
 import Collections from './components/Collections';
 import TabsSale from './components/TabsSale';
+import Special from './components/Special';
+import Introduction from './components/Introduction';
 
 const HomePage = () => {
   return (
@@ -17,6 +19,8 @@ const HomePage = () => {
       <About />
       <Collections />
       <TabsSale />
+      <Special />
+      <Introduction />
     </>
   );
 };
